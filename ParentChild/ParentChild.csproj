@@ -53,13 +53,31 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Child.cs" />
+    <Compile Include="Material.cs" />
     <Compile Include="Migrations\201906111547239_InitialCommit.cs" />
     <Compile Include="Migrations\201906111547239_InitialCommit.Designer.cs">
       <DependentUpon>201906111547239_InitialCommit.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906170831140_ViewForMaterials.cs" />
+    <Compile Include="Migrations\201906170831140_ViewForMaterials.Designer.cs">
+      <DependentUpon>201906170831140_ViewForMaterials.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906180943543_AddViewPlanning.cs" />
+    <Compile Include="Migrations\201906180943543_AddViewPlanning.Designer.cs">
+      <DependentUpon>201906180943543_AddViewPlanning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906181142307_TablePlanningIgnoreColumnPStepDesc.cs" />
+    <Compile Include="Migrations\201906181142307_TablePlanningIgnoreColumnPStepDesc.Designer.cs">
+      <DependentUpon>201906181142307_TablePlanningIgnoreColumnPStepDesc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906181145322_TablePlanningAddColumnPStepDesc.cs" />
+    <Compile Include="Migrations\201906181145322_TablePlanningAddColumnPStepDesc.Designer.cs">
+      <DependentUpon>201906181145322_TablePlanningAddColumnPStepDesc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Parent.cs" />
     <Compile Include="PcContext.cs" />
+    <Compile Include="Planning.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -70,6 +88,18 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201906111547239_InitialCommit.resx">
       <DependentUpon>201906111547239_InitialCommit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906170831140_ViewForMaterials.resx">
+      <DependentUpon>201906170831140_ViewForMaterials.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906180943543_AddViewPlanning.resx">
+      <DependentUpon>201906180943543_AddViewPlanning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906181142307_TablePlanningIgnoreColumnPStepDesc.resx">
+      <DependentUpon>201906181142307_TablePlanningIgnoreColumnPStepDesc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906181145322_TablePlanningAddColumnPStepDesc.resx">
+      <DependentUpon>201906181145322_TablePlanningAddColumnPStepDesc.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
