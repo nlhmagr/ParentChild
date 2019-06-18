@@ -25,9 +25,6 @@ namespace ParentChild
             modelBuilder.Entity<Planning>()
                 .HasKey(p => p.PStep)
                 .ToTable("Planning");
-            //.Ignore()
-            //.Property(p => p.MaterialNumber)
-                //.HasColumnName("PStep");
 
             base.OnModelCreating(modelBuilder);
         }
